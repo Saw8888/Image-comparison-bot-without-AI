@@ -29,5 +29,3 @@ if counter >= (i*j)*0.75:
 else:
     print('They are different')
     print('They are different by:', str((counter / (i * j)) * 100), '%')
-
-
