@@ -19,13 +19,15 @@ for i in range(len(Read)):#y coords
         red2 = list(Read2[i][j])[2]
         difference = (blue+green+red)-(blue2+green2+red2)
         lib3.append(difference)
+        if difference <= 10 and difference >= -10:
+            counter+=1
+            print(counter)
 
-for x in range(len(lib3)):
-    if lib3[x] <= 10 and lib3[x] >= -10:
-        counter+=1
 if counter >= (i*j)*0.75:
     print('They are similar images')
+    print('They are different by:', str((counter / (i * j)) * 100), '%')
 else:
     print('They are different')
+    print('They are different by:', str((counter / (i * j)) * 100), '%')
 
 
