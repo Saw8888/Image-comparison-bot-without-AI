@@ -40,4 +40,3 @@ else:
     print('They are different by:', str((counter / (y * x)) * 100), '%')
 
 pygame.display.update()
-input('End')
